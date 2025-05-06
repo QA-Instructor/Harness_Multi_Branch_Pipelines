@@ -44,3 +44,7 @@ pipeline:
                   template:
                     templateRef: account.Simple_Run_Shell_Template
                     versionLabel: Version1
+                    templateInputs:
+                      type: Run
+                      spec:
+                        command: echo 'Hello from Victoria'
