@@ -34,4 +34,7 @@ pipeline:
                   identifier: demo_step_1
                   spec:
                     shell: Sh
-                    command: echo "Demo step 1"
+                    command: |-
+                      echo "Demo step 1"
+                      echo <+pipeline.branch>
+                      echo <+pipeline.sequenceId>
