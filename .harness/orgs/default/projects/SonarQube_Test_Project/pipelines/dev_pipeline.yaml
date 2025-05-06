@@ -47,4 +47,6 @@ pipeline:
                     templateInputs:
                       type: Run
                       spec:
-                        command: echo 'Hello from Victoria'
+                        command: |-
+                          echo 'Hello from Victoria'
+                          echo 'This is a template input'
