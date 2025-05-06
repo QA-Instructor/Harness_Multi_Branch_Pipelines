@@ -38,3 +38,9 @@ pipeline:
                       echo "Demo step 1"
                       echo <+pipeline.branch>
                       echo <+pipeline.sequenceId>
+              - step:
+                  name: demo_step_2
+                  identifier: demo_step_2
+                  template:
+                    templateRef: account.Simple_Run_Shell_Template
+                    versionLabel: Version1
